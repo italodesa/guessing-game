@@ -14,15 +14,14 @@ public class Program {
             System.out.println("===== Guessing game =====");
             System.out.println("Play? [s/n]");
             round = sc.next().charAt(0);
-            System.out.println(correctNumber);
 
-            while(round != 'N'){
+            while(round != 'n'){
                 System.out.println("type a number from 1 to 100");
                 int number = sc.nextInt();
 
                 if(number == correctNumber){
                     System.out.println("Correct!");
-                    round = 'N';
+                    round = 'n';
                 }
 
                 else if(number > correctNumber){
@@ -32,6 +31,7 @@ public class Program {
                     System.out.println("your number is lower than correct number");
                 }
             }
+            break;
         }
     }
 }
